@@ -4,6 +4,7 @@
 // }
 
 // module.exports = nextConfig
+const path = require("path");
 
 module.exports = {
   images: {
@@ -12,5 +13,8 @@ module.exports = {
       "platform-looaside.fbsbx.com",
       "firebasestorage.googleapis.com",
     ],
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
   },
 };

@@ -21,7 +21,7 @@ function Header() {
     <div>
       <div className={"flex items-center"}>
         {/* Header Left */}
-        <div className="flex items-center">
+        <div className="flex items-center pl-3">
           <Image
             src="https://links.papareact.com/5me"
             width={40}
@@ -32,7 +32,7 @@ function Header() {
           <div className="flex ml-2 items-center rounded-full bg-gray-100 p-2">
             <SearchIcon className="h-6 text-gray-600" />
             <input
-              className="flex ml-2 items-center bg-transparent outline-none 
+              className="hidden md:inline-flex flex ml-2 items-center bg-transparent outline-none 
             placeholder-gray-500 flex-shrink"
               type="text"
               placeholder="Search Facebook"
@@ -50,6 +50,31 @@ function Header() {
           </div>
         </div>
         {/* Header Right */}
+        <div className="flex items-center sm:space-x-2 justify-end pr-3">
+          {/* User Picture */}
+          {/* <Image /> */}
+          <p className="whitespace-nowrap font-semibold pr-3">Bryan Dang</p>
+          <ViewGridIcon
+            className={
+              "hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full text-gray-70 cursor-pointer hover:bg-gray-300"
+            }
+          />
+          <ChatIcon
+            className={
+              "hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full text-gray-70 cursor-pointer hover:bg-gray-300"
+            }
+          />
+          <BellIcon
+            className={
+              "hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full text-gray-70 cursor-pointer hover:bg-gray-300"
+            }
+          />
+          <ChevronDownIcon
+            className={
+              "hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full text-gray-70 cursor-pointer hover:bg-gray-300"
+            }
+          />
+        </div>
       </div>
     </div>
   );
