@@ -52,7 +52,15 @@ function Header() {
         {/* Header Right */}
         <div className="flex items-center sm:space-x-2 justify-end pr-3">
           {/* User Picture */}
-          {/* <Image /> */}
+          <Image
+            // onclick={signout}
+            className="rounded-full cursor-pointer"
+            src="https://res.cloudinary.com/dlsn5wk0c/image/upload/v1648670636/105617173_3207927545896002_3424517180928198453_n_lw7ugj.jpg"
+            width="40"
+            height="40"
+            layout="fixed"
+            alt="Profile Image"
+          />
           <p className="whitespace-nowrap font-semibold pr-3">Bryan Dang</p>
           <ViewGridIcon
             className={
