@@ -18,7 +18,7 @@ import HeaderIcon from "./HeaderIcon";
 
 function Header() {
   return (
-    <div>
+    <div className="sticky top-0 z-50 bg-white p-2 lg:px-5 shadow-md">
       <div className={"flex items-center"}>
         {/* Header Left */}
         <div className="flex items-center pl-3">
